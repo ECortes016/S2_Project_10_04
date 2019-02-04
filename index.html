@@ -20,6 +20,8 @@
 
     <link href="rnt_base.css" rel="stylesheet" />
     <link href="rnt_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="rnt_audio.css">
+    <link rel="stylesheet" href="">
 
 </head>
 
@@ -37,6 +39,8 @@
     </header>
 
     <figure>
+        <iframe src="https://www.youtube.com/embed/ie2Mspukx14" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
     </figure>
 
@@ -70,7 +74,15 @@
 
         <section class="poem">
             <h2>Fire and Ice</h2>
+            <!-- An audio element was added with the controls element attribute to allow the user to play or pause. Two sources are added, both audio but in different formats. If the users browser does not support HTML5 but does support plug-ins, then the embed element is chosen to display the controls and audio. If the browser does not support HTML5 or plug-ins, then a paragraph is shown telling the user to upgrade their browser. This is all the same for the other audio element towards the bottom. -->
+            <audio controls>
+                <source src="rnt_fireice.mp3" type="audio/mp3">
+                <source src="rnt_fireice.ogg" type="audio/ogg">
 
+                <embed src="rnt_fireice.mp3" type="mp3/audio" width="250px" height="50px" controller autoplay
+                    showcontrols autostart>
+                <p><em>To play this audio clip, your browser needs to suppor HTML5.</em></p>
+            </audio>
             <p>
                 Some say the world will end in fire,<br />
                 Some say in ice.<br />
@@ -86,7 +98,14 @@
 
         <section class="poem">
             <h2>Devotion</h2>
+            <audio controls>
+                <source src="rnt_devotion.mp3" type="audio/mp3">
+                <source src="rnt_devotion.ogg" type="audio/ogg">
 
+                <embed src="rnt_devotion.mp3" type="mp3/audio" width="250px" height="50px" controller autoplay
+                    showcontrols autostart>
+                <p><em>To play this audio clip, your browser needs to suppor HTML5.</em></p>
+            </audio>
             <p>
                 The heart can think of no devotion<br />
                 Greater than being shore to the ocean&mdash;<br />
